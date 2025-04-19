@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+ 
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--color-bg);
+}
+
+:root {
+  --sidebar-width: 180px;
+  --gap: 16px;
+  --radius: 8px;
+  --color-bg: #f3f4f6;
+  --color-sidebar-bg: #111827;
+  --color-sidebar-text: #e5e7eb;
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+  --color-danger: #ef4444;
+  --color-warning: #fbbf24;
+  --color-info: #0ea5e9;
+  --color-text: #1f2937;
+  --color-muted: #6b7280;
+}
+
+.Layout {
+  display: flex;
+  background-color: var(--color-bg);
+  font-family: 'Audiowide', sans-serif;
+  color: var(--color-text);
+  min-height: 100vh;
+  
+}
+
+.Dashboard {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow-y: auto;
+  width: 150px;
+  align-items: center;
+  background-color: var(--color-sidebar-bg);
+  color: var(--color-bg);
+  padding-top: 50px;
+}
+
+.dashboard-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--gap);
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.Dashboard a {
+  display: block;
+  width: 100%;
+  text-decoration: none; 
+}
+
+.Dashboard a h3 {
+  margin: var(--gap) 0;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+}
+
+.Home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.Create {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Gallery {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  
+}
+
+.Update {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.Crewmate {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+.Card {
+  background-color: white;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: var(--gap);
+  margin: var(--gap) 0;
+  transition: transform 0.1s;
+}
+
+.Card:hover {
+  transform: translateY(-2px);
+}
+
+.Card h3 {
+  margin: 0 0 8px;
+  color: var(--color-primary);
+}
+
+.Card p {
+  margin: 0;
+}
+
+
+form {
+  background-color: white;
+  padding: var(--gap);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+form input[type="text"],
+form select,
+form textarea,
+form input[type="range"] {
+  padding: 8px;
+  margin-bottom: var(--gap);
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background-color: var(--color-info);
+}
+
+.formRange {
+  display: flex;
+  align-items: center;
+  align-self: "flex-start";
+  
+
+}
